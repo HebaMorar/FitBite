@@ -1,0 +1,178 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+   height:100vh 
+}
+
+a{
+   text-decoration: none;
+color:#424530;
+
+}
+
+.navbar{
+    /*
+    #e4e9c9*/
+ background-color: #e9f1bb;
+ display:flex ;
+ align-items: center;
+  justify-content: right;
+  gap:90px; 
+  text-align: center;
+}
+.navbar ul{
+    list-style: none;
+   display: flex;
+   align-items: center;
+}
+.navbar ul li{
+    padding: 30px;
+   align-items: center;
+
+}
+
+.navbar #logo{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+.navbar ul li:hover{
+
+display: block;
+background-color: #c59861;
+}
+/*
+*/
+ .search{
+    width:450px;
+   display: flex;
+   background-color: #ffffff;
+   align-items: center;
+    border-radius: 20px;
+padding: 10px;
+    margin: 30px;
+    border: 1px solid #ccc;
+  
+}
+
+.navbar input{
+    border:none;
+    background: transparent;
+    flex:content;
+    padding: 2px;
+   outline: none;
+}
+.navbar button{
+    border-radius: 50%;
+    border: none;
+    
+}
+.menu{
+ display: none;   
+}
+.navbar ul li:hover .menu{
+    display: block;
+    position: absolute;
+    background:  #e9f1bb;
+    margin-top:30px ;
+    margin-left: -30px;
+
+}
+.navbar ul li:hover .menu ul{
+display: block;
+
+}
+.navbar ul li:hover .menu ul li{
+ width: 115px;
+ padding: 13px;
+ border-bottom: 2px;
+    }
+  main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  direction: rtl;
+}  
+img{
+    width:300px;
+    height: 300px;
+    border-radius: 10px;
+}
+main .about h1{
+    padding:1px;
+    margin: 10px;
+
+}
+main .about p{
+    padding:1px;
+    margin: 25px;
+
+}
+main .container #sec{
+    width: 100%;
+display:flex;
+margin-right: 30px;
+    
+}
+main .container #sec .do{
+    border: #424530 3px solid;
+    padding:10px;
+    margin: 10px;
+    box-shadow: 4px 4px  #b0b886;
+}
+.container #sec button{
+    width:70px;
+    height:40px;
+    margin:20px 3px;
+    border: none;
+    background-color: #dfc967;
+   
+}
+.container #sec button:hover{
+    background-color: rgb(235, 158, 15);
+}
+.container #sec .do .icon{
+    width:60px;
+    display: flex;
+    align-items: center;
+}
+#sec {
+    display: flex;
+}
+
+main .container #sec .do { 
+    border: #424530 2px solid;
+    padding:10px;
+align-items: center;
+background-color: #fcfcfc;
+}
+.container #sec .do:hover {
+padding-top: 20px;
+
+}
+.container #sec .do {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 3px;
+    margin-right:-33px ;
+    border-radius: 20px;
+    
+    
+}
+ p{
+    color:  rgb(45, 78, 67);
+}
+ h1{
+    justify-content: center;
+   display: flex;
+    align-items: center;
+    color:  rgb(45, 78, 67);
+
+}
+a{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/header.css">
+<style>
+  .store {
+    display: flex;
+    gap: 15px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+</style>
+  </head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+          <ul>
+            <li><a href="/html/aboutas.html">من نحن</a></li>
+              <li><a href="/html/contact.html">تواصل معنا</a></li>
+              <li> 
+                <a href="/html/signin.html">تسجيل دخول
+                  <i class='bx bxs-user'></i>
+                </a></li>
+                <div class="search">
+                  <input type="text">
+                  <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>  
+                  <li><a href="/html/shoppingbag.html">عربة التسوق<i class='bx bx-store' ></i></a>
+                  </li>
+                  
+                  <li class="dropdown">
+                    <a href="">خدماتنا</a>         
+                  <div class="menu">
+    
+                    <ul  >
+                      <li>
+                        <a href="">عيادات التغذية</a></li>
+                        <li>
+                          <a href="">استشارات طبية</a></li>
+                          <li>
+                            <a href="">ورش عمل ودورات تثقيفية</a></li>
+                            <li>
+                              <a href="">مقالات علمية </a></li>
+                              <li>
+                                <a href="">الاشتراك</a></li>
+                              </ul>
+                              
+                            </div>
+                              
+                      </li>
+              <li><a href="/html/index.html">الرئيسية</a></li>
+            </ul>
+            <a href="/html/index.html"><img id="logo" src="/image/logo-removebg-preview.png" alt="nutrition logo">
+            </a>
+        
+        </nav>
+    
+        
+        </header>
+        <main>
+          <h2>🛒 متجر المنتجات الصحية</h2>
+          <div class="store">
+              <div class="product">
+                  <img src="product1.jpg" alt="منتج 1">
+                  <h3>مكمل غذائي طبيعي</h3>
+                  <p>💰 السعر: 50 ريال</p>
+                  <button>إضافة للسلة</button>
+              </div>
+      
+              <div class="product">
+                  <img src="product2.jpg" alt="منتج 2">
+                  <h3>وجبات صحية جاهزة</h3>
+                  <p>💰 السعر: 30 ريال</p>
+                  <button>إضافة للسلة</button>
+              </div>
+          </div>
+      </main>
+      
+</body>
+</html>

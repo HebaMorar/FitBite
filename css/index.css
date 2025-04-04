@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+   height:100vh ;
+
+}
+
+a{
+   text-decoration: none;
+color:#424530;
+
+}
+
+.navbar{
+    /*
+    #e4e9c9*/
+ background-color: #e9f1bb;
+ display:flex ;
+ align-items: center;
+  justify-content: right;
+  gap:90px; 
+  text-align: center;
+}
+.navbar ul{
+    list-style: none;
+   display: flex;
+   align-items: center;
+}
+.navbar ul li{
+    padding: 30px;
+   align-items: center;
+
+}
+
+.navbar #logo{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+.navbar ul li:hover{
+
+display: block;
+background-color: white;
+}
+/*
+*/
+ .search{
+    width:450px;
+   display: flex;
+   background-color: #ffffff;
+   align-items: center;
+    border-radius: 20px;
+padding: 10px;
+    margin: 30px;
+    border: 1px solid #ccc;
+  
+}
+
+.navbar input{
+    border:none;
+    background: transparent;
+    flex:content;
+    padding: 2px;
+   outline: none;
+}
+.navbar button{
+    border-radius: 50%;
+    border: none;
+    
+}
+.menu{
+ display: none;   
+}
+.navbar ul li:hover .menu{
+    display: block;
+    position: absolute;
+    background:  #e9f1bb;
+    margin-top:30px ;
+    margin-left: -30px;
+
+}
+.navbar ul li:hover .menu ul{
+display: block;
+
+}
+.navbar ul li:hover .menu ul li{
+ width: 115px;
+ padding: 13px;
+ border-bottom: 2px;
+    }
+
+    /*image apple */
+    main {
+       display: flex;
+       align-items: center;
+       justify-self: center;
+        gap: 20px;
+        padding: 20px;
+       flex-wrap: wrap;
+    }
+        main .apple img{
+          
+            max-width: 600px;
+        }
+        main .welcome {
+            max-width: 500px;
+            text-align: right;
+            font-family: "Tajawal", sans-serif;
+            font-size: 22px;
+            direction: rtl;
+            color: #333;
+        }
+        
+        .button {
+            margin-top: 20px;
+        }
+        
+        .button button {
+            background-color: #ff9200;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 25px;
+           
+        }
+        .button button:hover{
+            background-color: #ffc884;
+            
+        }
+        
+     
+        

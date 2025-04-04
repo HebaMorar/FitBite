@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استشارات طبية</title>
+    <link rel="stylesheet" href="/css/clender.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css"> 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="/javascript/clender.js">
+ 
+</script>
+
+
+
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="/html/aboutas.html">من نحن</a></li>
+          <li><a href="/html/contact.html">تواصل معنا</a></li>
+          <li> 
+            <a href="/html/login.html">تسجيل دخول
+              <i class='bx bxs-user'></i>
+            </a></li>
+            <div class="search">
+              <input type="text">
+              <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>  
+              <li><a href="/html/shoppingbag.html">عربة التسوق<i class='bx bx-store' ></i></a>
+              </li>
+              
+              <li class="dropdown">
+                <i class='bx bxs-right-arrow'></i>              
+                <a href="">خدماتنا</a>         
+              <div class="menu">
+
+                <ul  >
+                  <li>
+                    <a href="/html/contact.html">عيادات التغذية</a></li>
+                    <li>
+                      <a href="/html/contactdoctor.html">استشارات طبية</a></li>
+                      <li>
+                        <a href="/html/courses.html">ورش عمل ودورات تثقيفية</a></li>
+                        <li>
+                            <a href="">الاشتراك</a>
+                          </li>
+                            <li><a href="">المتجر</a>
+                            </li>
+                          </ul>
+                        </div>
+                  </li>
+          <li>
+            <a href="/html/index.html">
+              الرئيسية
+            </a>
+          </li>
+        </ul>
+        <a href="/html/index.html">
+          <img id="logo" src="/image/logo-removebg-preview.png" alt="nutrition logo">
+        </a>
+    
+    </nav>
+
+   
+    </header>
+    <main> 
+        <div class="container">
+     <aside>
+       <form action="">
+        <label for="typecon">اختر نوع الاستشارة</label>
+        <select name="typecon" id="typecon">
+
+          <option value="" disabled selected></option>
+          <option value="تغذية">تغذية</option>
+          <option value="رياضة">رياضة</option>
+      </select>
+      
+      <label for="Specialist">اختر الأخصائي/ة</label>
+      <select id="Specialist">
+          <option  value="" disabled selected></option>
+          <option value="اسرار" data-type="تغذية">اسرار</option>
+          <option value="جاد" data-type="تغذية">جاد</option>
+          <option value="اية" data-type="رياضة">اية</option>
+          <option value="زين" data-type="رياضة">زين</option>
+      </select>
+      
+     
+           <button class="button" id="online">
+             <i class='bx bxl-zoom'></i>
+            اونلاين
+          </button>
+            <button class="button" id="inperson"><i class='bx bx-home-alt-2' ></i>
+              لقاء في العيادة</button>
+          </form>
+        </aside>
+    
+
+         <div class="calendar">
+           <table border="1">
+          <h2>جدول الحجز - مارس 2025</h2>
+            <thead>
+              <th>السبت</th>
+              <th>الاحد</th>
+              <th>الاثنين</th>
+              <th>الثلاثاء</th>
+              <th>الاربعاء</th>
+              <th>الخميس</th>
+              <th>الجمعة</th>
+            </thead>
+          
+       
+<tr>
+
+  <td></td>                 
+  <td></td>                 
+  <td></td>                 
+  <td><button class="zoom">1</button></td>                 
+  <td><button class="in-person" id="zoom">2</button></td>                 
+  <td><button class="in-person">3</button></td>                 
+  <td><button>4</button></td>                 
+</tr>
+          </div>
+          <div>
+<tr>
+
+  <td><button class="in-person">5</button></td>                 
+  <td><button class="in-person" id="zoom" >6</button></td>                 
+  <td><button>7</button></td>                 
+  <td><button class="zoom">8</button></td>                 
+  <td><button class="in-person">9</button></td>                 
+  <td><button class="zoom">10</button></td>                 
+  <td><button class="in-person">11</button></td>                 
+</tr>
+         
+          <div>
+            <tr>
+
+            <td><button>12</button></td>                 
+            <td><button class="in-person">13</button></td>                 
+            <td><button>14</button></td>                 
+            <td><button class="zoom">15</button></td>                 
+            <td><button class="in-person">16</button></td>                 
+            <td><button class="zoom">17</td>                 
+              <td><button >18</td>                 
+              </tr>
+                    </div>
+                    <div>
+                    <tr>
+
+                      <td><button class="zoom"> 19</button></td>                 
+                      <td><button class="in-person">20</button></td>                 
+                      <td><button class="zoom">21</button></td>                 
+                      <td><button class="in-person">22</button></td>                 
+                      <td><button class="in-person" id="zoom">23</button></td>                 
+                      <td><button class="zoom">24</button></td>                 
+                      <td><button>25</button></td>                 
+                    </tr>
+                              </div>
+                               <div>
+                              <tr>
+
+                                <td><button class="in-person">26</button></td>                 
+                                <td><button class="in-person">27</button></td>                 
+                                <td><button class="zoom">28</button></td>                 
+                                <td><button >29</button></td>                 
+                                <td ><button class="in-person" id="zoom">30</button></td>                 
+                                <td></td>                 
+                                <td></td>                 
+                              </tr>
+                                        </div>
+                                    
+                               
+</tbody>
+</table></div>
+        </table>
+    
+    <div class="time-container">
+      <div class="time in-person">
+        <button>9:00</button>
+        <button>9:30</button>
+        <button>10:00</button>
+         </div>
+    
+     <div class="time in-person">
+        <button>11:00</button>
+        <button>11:30</button>
+        <button>10:30</button>
+     
+     </div>
+     <div class="time in-person">
+        <button>12:00</button>
+        <button>12:30</button>
+        <button>1:00</button>
+         </div>
+    
+  
+     <!-- أوقات الزوم (بعد 5 مساءً) -->
+     <div class="time zoom">
+        <button>4:00</button>
+        <button>4:30</button>
+        <button>5:00</button>
+        </div>
+     <div class="time zoom">
+       
+     </div>
+     <div class="time zoom">
+      <button>5:30</button>
+      <button>6:00</button>
+      <button>6:30</button>
+       
+     </div>
+     <div class="time zoom">
+      <button>7:00</button>
+      <button>7:30</button>
+      <button>8:00</button>
+     </div>
+    </div>
+    
+
+    
+  </div>
+  <div class="buttonsubmit">
+    <button id="submit"  >
+      تأكيد الحجز
+    </button>
+  </div>
+</div>
+
+</div>
+    </main>
+<!--footer-->
+     <footer>
+      <div class="footer-container">
+          <div class="footer-about">
+              <h3> موقع التغذية والرياضة</h3>
+              <p>نساعدك في تحقيق أهدافك الصحية من خلال خطط غذائية وتمارين مخصصة.</p>
+          </div>
+         <div class="footer-links">
+              <h3> روابط سريعة</h3>
+              <ul>
+                  <li><a href="/html/index.html"> الرئيسية</a></li>
+                  <li><a href="/html/clender.html"> حجز موعد</a></li>
+                  <li><a href="#"> وصفات غذائية</a></li>
+                  <li><a href="#"> برامج تدريبية</a></li>
+                  <li><a href="/html/contact.html"> تواصل معنا</a></li>
+              </ul>
+          </div>
+  
+         <div class="footer-contact"><a href="">
+           <i class='bx bx-store-alt'></i>
+           <h3><a href="/html/contact.html">
+
+             افرعنا
+            </a>
+            </h3>
+        
+          <ul>
+            <li><a href="/html/contact.html#جبل النزهة">جبل النزهة</a></li>
+            <li><a href="/html/contact.html#الجاردنز">الجاردنز</a></li>
+            <li><a href="/html/contact.html#جبل الحسين">جبل الحسين</a></li>
+            <li><a href="/html/contact.html#طبربور">طبربور</a></li>
+            <li><a href="/html/contact.html#ضاحيةالياسمين">فرع ضاحية الياسمين</a></li>
+            <li><a href="/html/contact.html#مرج الحمام">مرج الحمام</a></li>
+            <li><a href="/html/contact.html#حي نزال">حي نزال</a></li>
+            <li><a href="/html/contact.html#جرش">فرع جرش</a></li>
+          </ul>
+          </div>
+  
+         <div class="footer-social">
+              <h3> تابعنا على</h3>
+              <a href="#"><i class='bx bxl-instagram' ></i>
+              <a href="#"><i class='bx bxl-facebook' ></i>
+              <a href="#"><i class='bx bxl-twitter' ></i>
+              <a href="#"><i class='bx bxl-youtube' ></i>
+          </div>
+      </div>
+  
+      <div class="footer-bottom">
+          <p>
+        <bdi>FitBites</bdi>    جميع الحقوق محفوظة &copy; لدى 
+          </p></div>
+  </footer>
+ 
+  </body></html>    
